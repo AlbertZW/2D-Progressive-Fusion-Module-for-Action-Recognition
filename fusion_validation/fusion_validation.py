@@ -2,8 +2,8 @@ import os
 import time
 import torch
 import torchvision
-from dataset import TFNDataSet
-from processing_data.transforms import *
+from ops.dataset import TSNDataSet
+from ops.transforms import *
 from fusion_validation import model1
 from fusion_validation import model2
 
@@ -73,7 +73,7 @@ def fusion_validation(args):
 		data_length = 5
 
 	val_loader = torch.utils.data.DataLoader(
-		TFNDataSet(data_path, os.path.join(list_folder, args.val_list), num_segments=args.num_segments,
+		TSNDataSet(data_path, os.path.join(list_folder, args.val_list), num_segments=args.num_segments,
 		           new_length=data_length,
 		           modality=args.modality,
 		           image_tmpl=frame_format if args.modality in ["RGB",
