@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py something RGB --arch resnet50 --num_segments 8 --gd 20 --lr 0.0025 --wd 1e-4 --lr_steps 35 60 --epochs 70 --batch-size 48 -j 8 --dropout 0.5 --consensus_type=avg --npb

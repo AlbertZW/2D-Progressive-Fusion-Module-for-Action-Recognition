@@ -30,7 +30,7 @@ The code is built with following libraries:
 ## Training & Testing
 ```training.sh``` and ```testing.sh``` is provided for training and testing.
 
-Pathway fusion is proposed to further extend the modeling capability for large scale datasets. We flexibly adjust the network configurations to create pathways. Please refer to ```pathway_fusion.py``` for the usage.
+Pathway fusion is proposed to further extend the modeling capability for large scale datasets. We flexibly adjust the network configurations to create pathways. Please copy the pathway models to ```./fusion_validation``` for the usage.
 
 ## Citation
 ```
